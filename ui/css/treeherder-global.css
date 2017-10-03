@@ -12,10 +12,12 @@
 html, body {
   height: 100%;
   overflow: hidden;
+
 }
 
 body {
   line-height: inherit;
+  font-size: 14px;
 }
 
 a:visited {

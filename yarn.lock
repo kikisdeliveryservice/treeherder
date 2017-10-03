@@ -6488,6 +6488,10 @@ superagent-hawk@^0.0.6:
     hawk "~1.0.0"
     qs "^0.6.6"
 
+superagent-promise@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/superagent-promise/-/superagent-promise-1.1.0.tgz#baf22d8bbdd439a9b07dd10f8c08f54fe2503533"
+
 superagent-promise@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/superagent-promise/-/superagent-promise-0.2.0.tgz#91c77f4cb0c9cf41beeb917d8add697f6d15caea"
@@ -6582,9 +6586,9 @@ tar@^2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
-taskcluster-client@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/taskcluster-client/-/taskcluster-client-2.5.0.tgz#11d3b212e0be43070434c2a1427950ddeae01cd1"
+taskcluster-client@2.5.4:
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/taskcluster-client/-/taskcluster-client-2.5.4.tgz#6a1e51e995e4e034a5eaf3f1d91badbb4f2ca1e1"
   dependencies:
     amqplib "^0.5.1"
     debug "^2.1.3"

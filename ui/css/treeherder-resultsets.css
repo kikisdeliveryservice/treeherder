@@ -34,6 +34,8 @@
 .result-set-body {
   padding-left: 15px;
   padding-right: 25px;
+  display: flex;
+  flex-direction: row;
 }
 
 .result-set {
@@ -42,7 +44,14 @@
   margin-top: 2px;
   white-space: normal;
   width: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*position: relative;*/
+}
+
+.result-set-revisions-jobs {
+  display: flex;
+  flex-direction: row;
 }
 
 .result-counts {
@@ -109,9 +118,16 @@ fieldset[disabled] .btn-resultset:hover {
  * Revision list
  */
 
+revisions {
+  width: 42%;
+  overflow: hidden;
+  margin-right: 9px;
+}
+
 .revision-list {
   overflow: hidden;
   white-space: nowrap;
+  flex: 50%;
 }
 
 .revision-list .fa-external-link-square {
@@ -175,6 +191,10 @@ fieldset[disabled] .btn-resultset:hover {
   display: table-cell;
   white-space: normal;
   word-break: normal;
+}
+
+.job-list {
+  flex: 50%;
 }
 
 .job-list table {
