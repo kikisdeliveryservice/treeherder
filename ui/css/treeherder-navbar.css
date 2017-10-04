@@ -11,12 +11,16 @@
 #th-global-navbar-top {
     padding-left: 0;
     border-bottom: 1px solid black;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
 }
 
 .navbar {
     min-height: 36px;
     margin-bottom: 0px;
     border-radius: 0px;
+    flex-direction: column;
 }
 
 .navbar .dropdown-menu {
@@ -30,24 +34,29 @@
 #th-logo {
     padding-left: 14px;
     border-left: 0;
+    font-size: 14px;
 }
 
 .btn-right-navbar {
    font-size: 13px;
 }
 
+.btn {
+    font-size: 14px;
+}
 /*
  * Right hand upper navbar
  */
 
 .navbar-right {
     /* Override bootstrap 3.3.5 which doesn't work with the way we align our navbar */
-    margin-right: 0px;
+    /*margin-right: 0px;*/
+    /*flex: 1;*/
 }
 
 .navbar-collapse {
     /* Override bootstrap for flush right navbar menus */
-    padding-right: 0;
+    /*padding-right: 0;*/
 }
 
 .nav-menu-btn {
@@ -125,6 +134,10 @@
 
 .watched-repo-navbar {
     overflow: visible;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
 }
 
 .tree-closed {
@@ -143,9 +156,12 @@
     color: lightgray;
 }
 
+.watched-repo-list {
+
+}
 th-watched-repo {
     /* Required for Chrome */
-    float: left;
+    /*float: left;*/
 }
 
 /*
@@ -230,6 +246,7 @@ th-watched-repo {
     width: 150px;
     display: inherit;
     transition: width 0.2s;
+    font-size: 12px;
 }
 
 #quick-filter-parent {

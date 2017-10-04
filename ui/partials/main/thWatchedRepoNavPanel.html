@@ -1,8 +1,9 @@
 <div id="watched-repo-navbar" class="th-context-navbar watched-repo-navbar clearfix">
 
-  <th-watched-repo ng-repeat="watchedRepo in repoModel.watchedRepos"></th-watched-repo>
-
-  <div class="navbar-right">
+  <span class="watched-repo-list">
+    <th-watched-repo ng-repeat="watchedRepo in repoModel.watchedRepos"></th-watched-repo>
+  </span>
+  <span >
     <span>
       <form role="search" class="form-inline">
 
@@ -120,5 +121,5 @@
         </span>
       </form>
     </span>
-  </div>
+  </span>
 </div>
