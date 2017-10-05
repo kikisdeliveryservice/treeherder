@@ -36,7 +36,7 @@ a:visited {
   overflow-y: auto;
 }
 
-.pagination, .carousel, .panel-title a {
+.pagination, .panel-title a {
   cursor: pointer;
 }
 

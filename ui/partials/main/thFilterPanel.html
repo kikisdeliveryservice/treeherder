@@ -3,13 +3,13 @@
      ng-controller="FilterPanelCtrl">
   <div class="nav-panel-help-text">Specify which jobs to show based on this filter criteria.
     <span class="pull-right">
-      <span class="btn btn-default btn-xs"
+      <span class="btn btn-secondary btn-sm"
             title="Pin all jobs that pass the global filters"
             ng-click="pinAllShownJobs()"><i class="fa fa-thumb-tack"></i> pin all showing</span>
-      <span class="btn btn-default btn-xs"
+      <span class="btn btn-secondary btn-sm"
             title="Show only superseded jobs"
             ng-click="thJobFilters.setOnlySuperseded()">superseded only</span>
-      <span class="btn btn-default btn-xs"
+      <span class="btn btn-secondary btn-sm"
             title="Reset to default status filters"
             ng-click="thJobFilters.resetNonFieldFilters()">reset</span>
     </span>
@@ -17,10 +17,10 @@
 
   <!-- Result status filters -->
   <span ng-repeat="group in filterGroups"
-        class="panel panel-default th-option-group th-inline-option-group">
+        class="card th-option-group th-inline-option-group">
 
     <!-- Group heading -->
-    <div class="panel-heading th-option-heading">{{::group.name}}
+    <div class="card-header th-option-heading">{{::group.name}}
       <span class="pull-right">
       <input type="checkbox"
              ng-model="group.allChecked"
@@ -28,7 +28,7 @@
       </span>
     </div>
     <!-- Group content -->
-    <div class="panel-body">
+    <div class="card-body">
       <span ng-repeat="filterName in group.resultStatuses">
         <th-filter-checkbox></th-filter-checkbox>
       </span>
@@ -36,16 +36,16 @@
   </span>
 
   <!-- Classified/Unclassified filters -->
-  <span class="panel panel-default th-option-group th-inline-option-group">
-    <div class="panel-heading th-option-heading">manual classification</div>
-    <div class="panel-body">
-      <label class="checkbox-inline">
+  <span class="card th-option-group th-inline-option-group">
+    <div class="card-header th-option-heading">manual classification</div>
+    <div class="card-body">
+      <label>
         <input type="checkbox"
                id="classified"
                ng-model="classifiedFilter"
                ng-click="toggleClassifiedFilter()"> classified
       </label>
-      <label class="checkbox-inline">
+      <label>
         <input type="checkbox"
                id="unclassified"
                ng-model="unClassifiedFilter"

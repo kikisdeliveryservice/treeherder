@@ -111,7 +111,7 @@ main .progress {
   padding-right: .25em;
 }
 
-[disabled]:hover {
+:disabled:hover {
   cursor: not-allowed;
 }
 

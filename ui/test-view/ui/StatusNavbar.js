@@ -44,7 +44,6 @@ class StatusNavbar extends React.Component {
           </span>
 
           <span className="navbar-text">
-            <span className="hidden-sm-down">&mdash;&nbsp;&nbsp;&nbsp;</span>
             <Icon name="id-card-o"/> Author <code>{this.props.push.author}</code>
           </span>
         </Nav>

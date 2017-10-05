@@ -82,9 +82,9 @@
 .btn-resultset.disabled:hover,
 .btn-resultset.disabled:active,
 .btn-resultset.disabled.active,
-.btn-resultset[disabled]:hover,
-.btn-resultset[disabled]:active,
-.btn-resultset[disabled].active,
+.btn-resultset:disabled:hover,
+.btn-resultset:disabled:active,
+.btn-resultset:disabled.active,
 fieldset[disabled] .btn-resultset:hover {
   background-color: #7c7a7d;
   border-color: #7c7a7d;
@@ -207,4 +207,8 @@ revisions {
 
 .job-list table tr:nth-child(even) {
   background: #f8f8f8;
+}
+
+.get-next {
+  flex-direction: row;
 }
