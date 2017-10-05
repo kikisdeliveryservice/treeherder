@@ -21,6 +21,7 @@
     margin-bottom: 0px;
     border-radius: 0px;
     flex-direction: column;
+    padding: 0;
 }
 
 .navbar .dropdown-menu {
